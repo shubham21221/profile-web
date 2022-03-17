@@ -1,0 +1,483 @@
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    h1{
+        font-size: 16px;
+        color: #415b90;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+        
+    }
+    
+    p {
+        font-size: 15px;
+        color: #a5a5a5;
+        line-height: 22px;
+    }
+    
+    .primary-button a {
+        text-decoration: none;
+        padding: 10px 18px;
+        display: inline-block;
+        border-radius: 24px;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    
+    
+    /* ======================
+    ----- FIRST SECTION------
+    =======================*/
+    
+    .first-section {
+        background-image: url(img/first-section-bg.jpg);
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 20% 0px 20% 0px;
+        margin-top: 20px;
+        
+    }
+    
+    .first-section .text-content {
+        text-align: right;
+        color: #fff;
+    }
+    
+    .first-section .text-content h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .first-section .text-content h3 {
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    .first-section .text-content .line-dec {
+        width: 60px;
+        height: 2px;
+        background-color: #fff;
+        margin: 25px 0px 25px auto;
+        
+    }
+    
+    .first-section .text-content span {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    
+    /* ======================
+    ---- SECOND SECTION------
+    =======================*/
+    
+    .second-section {
+        padding: 10pxpx 0px;
+    }
+    
+    .second-section .service-item {
+        text-align: center;
+    }
+    
+    .second-section .service-item .icon img {
+        max-width: 50%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    
+    .second-section h4 {
+        font-size: 16px;
+        color: #415b90;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+/* last section */
+
+.container
+{
+    width: 90%;
+    text-shadow: rgb(228, 208, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 7%;
+}
+.btn
+{
+    outline: none;
+    border: none;
+    width: 90px;
+    height: 30px;
+    background: transparent;
+    color: rgb(129, 0, 0);
+    position: relative;
+    font-size: 0.9em;
+    margin: 17px 0;
+    
+}
+
+/* first button -----------------------------*/
+
+.first-btn
+{
+    border-bottom: 3px solid rgb(189, 197, 209);
+    transition:  all 400ms ease-out;
+    background-color: rgb(219, 205, 205);
+}
+.first-btn:hover
+{
+    background: rgb(136, 148, 167);
+
+}
+
+
+/* second button ---------------------------*/
+
+.second-btn
+{
+    border: 3px solid #7DB46CFF;
+   
+    z-index: 4;
+    transform-style: preserve-3d;
+}
+.second-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#9de6b8 ;
+    left: 3px;
+    top: 3px;
+    z-index: -2;
+    transition: all 300ms linear;
+    transform: translateZ(-20px);
+}
+.second-btn:hover::after
+{
+    left: 0; top: 0;
+}
+
+
+/* Third button ----------------------------
+
+.third-btn
+{
+    transition: all 400ms;
+}
+.third-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0; left: 0;
+   border-left: 3px solid blue;
+   border-top: 3px solid blue;
+   transition: all 500ms;
+}
+.third-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0; right: 0;
+   border-right: 3px solid blue;
+   border-bottom: 3px solid blue;
+   transition: all 400ms;
+}
+.third-btn:hover::before,.third-btn:hover::after
+{
+    width: 100%;
+    height: 100%;
+}
+
+ fourth button ---------------------------*/
+
+.fourth-btn
+{
+  
+    overflow: hidden;
+    
+}
+.fourth-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left , transparent 44% , #606060FF 84%);
+    left: 0;top: 0;
+    z-index: -5;
+    
+    animation: fourth-btn-anime 1.4s linear infinite ;
+}
+.fourth-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    transform:translate(-50%,-50%) ;
+    left:50%;top: 50%;
+    background: #E3CD81FF;
+    z-index: -4;
+}
+@keyframes fourth-btn-anime
+{
+    0%{
+        transform:  rotateZ(0deg);
+    }
+    0%{
+        transform:  rotateZ(360deg);
+    }
+}
+
+
+/* fifth button --------------------------*/
+
+.fifth-btn
+{
+    background: rgb(247, 168, 78);
+   z-index: 0;
+   overflow: hidden;
+}
+.fifth-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(226, 187, 137);
+    z-index: -5;
+    transform: skewX(45deg) scaleX(0);
+    transform-origin: center;
+    transition: all 500ms ease;
+}
+.fifth-btn:hover::after
+{
+    transform: skewX(45deg) scaleX(1.4);
+}
+
+
+/* sixth button ------------------------------
+
+.sixth-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    left: 0;
+    background: #603F83FF;
+    z-index: -2;
+    transform-origin: bottom;
+    transform: scaleY(0.15);
+   transition: all 500ms ease;
+}
+.sixth-btn:hover:before
+{
+    transform: scaleY(1);
+}
+
+ seventh button ---------------------------*/
+
+.seventh-btn
+{
+    background: rgb(157, 162, 172);
+}
+.seventh-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height:90%;
+    bottom: 0;
+    left:5px;
+    background: rgb(173, 104, 97);
+    transform-origin: left;
+    transform: rotateZ(0deg);
+    z-index: -2;
+    transition: all 500ms ease-out;
+}
+.seventh-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height:90%;
+    top: 0;
+    right:5px;
+    background: #FFBA52FF;
+    transform-origin: right;
+    transform: rotateZ(0deg);
+    z-index: -2;
+    transition: all 500ms ease-out;
+}
+.seventh-btn:hover::before , .seventh-btn:hover::after
+{
+    transform: rotateZ(-10deg);
+}
+
+
+/* eigth button ----------------------------
+
+.eigth-btn 
+{
+    background: #339E66FF;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+.eigth-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    left: 0;
+    background: #95DBE5FF;
+    z-index: -2;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform  500ms 0.5s;
+}
+.eigth-btn:hover:before
+{
+   
+    transform: scaleY(1);
+    transition: transform 500ms ;
+   
+}
+
+
+.eigth-btn::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    left: 0;
+    background: orchid;
+
+    z-index: -2;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 500ms  linear ;
+}
+.eigth-btn:hover:after
+{
+    transform: scaleY(1);
+    transition: transform 500ms 0.5s linear;
+}
+
+
+ ninth button ------------------------ */
+
+.ninth-btn
+{
+    background: rgb(199, 187, 211);
+    z-index: 0;
+    overflow: hidden;
+}
+.ninth-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(47, 42, 53, 0.699);
+    z-index: -5;
+    transform: skewX(45deg) scaleX(0.5);
+    transition: left 500ms linear;
+}
+.ninth-btn:hover:before
+{
+    left: 100%;
+}
+
+
+/* tenth button -------------------------- 
+
+.tenth-btn
+{
+    background: rgb(209, 87, 97);
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
+}
+.tenth-btn::before
+{
+    content: "";
+    position: absolute;
+    width:200px;
+    height: 200px;
+    top: -200%;
+    left:-20%;
+    background: #643E46FF;
+    border-radius: 50%;
+    transition: all 700ms linear;
+    transform: scale(0);
+    transform-origin: left;
+    z-index: -1;
+}
+.tenth-btn:hover:before
+{
+    transform: scale(1);
+}
+*/
+
+footer {
+	text-align: center;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 11% 0px 4% 0px;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+footer p {
+	margin-top: 10px;
+	font-size: 13px;
+	font-weight: 30;
+    padding-top: 20px;
+    margin-left: 2px;
+    margin-right: 1px;
+	letter-spacing: 0.2px;
+	color: rgb(112, 111, 111);
+}
+
